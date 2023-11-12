@@ -1,0 +1,60 @@
+body {
+	font-family: sans;
+	background: #353446;
+	color: #CAA9E0 ;
+}
+
+header{
+	font-family: monospace;
+	color: #9998EE;
+
+}
+
+a {
+	text-decoration: none; 
+	color: #91B1F0;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+img {
+	max-width: 100% ;
+}
+
+header h1 {
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+}
+#prevart {
+	float: left ;
+	text-align: left ;
+}
+#nextart {
+	float: right ;
+	text-align: right ;
+}
+#nextart,#prevart {
+	max-width: 33% ;
+}
+
+.center {
+	text-align:center;
+}

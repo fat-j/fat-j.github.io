@@ -1,0 +1,5 @@
+baseURL = 'https://fat-j.github.io/'
+languageCode = 'en-us'
+title = 'A Website'
+theme = "lugo"
+paginate = 10
