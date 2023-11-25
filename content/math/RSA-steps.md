@@ -9,7 +9,12 @@ tags = ["math"]
 
 This is the general steps needed to implement an extremely basic form of RSA from my understanding
 
+RSA is an encryption algorithm that finds numbers **n**, **d**, **e** where **m** mod **n** ≡ (**m**^**e**)^**d** mod **n**. With **m** being the plaintext message and **c** being the cipher text, **n** and **e**, the public key, are released. This means anybody can encrypt a message with  **c** = **m**^**e** mod **n** and decrypt it using **m** = **c**^**d** mod **n**. 
 
+**n** is made by multiplying two primes and it's secure since it's hard to factor large primes with classical computers. This lets you release **n** without having them know which primes you used and those primes are then used to generate **d**, the private key.
+
+
+This means RSA is secure against brute force attacks if you make **n** really large and take some precautions to make it so people can't guess which primes are used. I don't fully know what issues there are, but a simple example that's true in the right situation is if you have a twin prime (11 and 13 lets say) they can take the square root and get a good estimate since taking square roots is really fast. 
 
 Steps with an * will have a note at the end if there's an issue with the basic implementation for practical usage.
 
